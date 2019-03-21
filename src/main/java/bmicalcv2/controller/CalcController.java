@@ -20,7 +20,7 @@ public class CalcController {
                          @RequestParam String activity, @RequestParam(value = "gender") String gender) {
 
 
-        BmiCalc bmiCalc = new BmiCalc(weight, height);
+        BmiCalc bmiCalc = new BmiCalc(height, weight);
         PerfectWeight perfectWeight = new PerfectWeight(height, weight);
         map.put("description", (bmiCalc.getBmiDescription()));
         map.put("perfectWeight", perfectWeight.getPerfectWeight());
