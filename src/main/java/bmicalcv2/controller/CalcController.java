@@ -15,7 +15,7 @@ public class CalcController {
     private double weight;
     private double height;
 
-    @GetMapping("/bmicalculate")
+    @GetMapping("/calculate")
     public String getBmr(@RequestParam double height, @RequestParam double weight, ModelMap map, @RequestParam int age,
                          @RequestParam String activity, @RequestParam(value = "gender") String gender) {
 
@@ -26,10 +26,10 @@ public class CalcController {
         map.put("perfectWeight", perfectWeight.getPerfectWeight());
         BmrCalc bmrCalc = new BmrCalc(height, weight, age, gender, activity);
         map.put("bmr", (bmrCalc.getBmrDescription()));
-        return "bmicalculate";
+        return "calculate";
     }
 
-    @GetMapping("/home")
+    @GetMapping("/")
     public String homePage() {
         return "home";
     }
