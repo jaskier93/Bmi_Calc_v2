@@ -47,7 +47,7 @@ public class BmiCalc {
         }
         if (bmi < 35 && bmi >= 30) {
             description = "Masz otyłość pierwszego stopnia! Twój indeks BMI wynosi: " + df.format(bmi);
-        }""
+        }
         if (bmi < 40 && bmi >= 35) {
             description = "Masz otyłość drugiego stopnia! Twój indeks BMI wynosi: " + df.format(bmi);
         }
