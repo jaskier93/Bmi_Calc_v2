@@ -97,6 +97,28 @@ select {
     text-decoration: none;
 }
 
+.myButton3 {
+    -moz-box-shadow: inset 1px 0px 0px -3px #0ade1a;
+    -webkit-box-shadow: inset 1px 0px 0px -3px #0ade1a;
+    box-shadow: inset 1px 0px 0px -3px #0ade1a;
+    background-color: #0ade1a;
+    -moz-border-radius: 42px;
+    -webkit-border-radius: 42px;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Times New Roman;
+    font-size: 16px;
+    padding: 9px 24px;
+    width: 200px;
+    text-decoration: none;
+}
+.myButton3:active {
+    position: relative;
+    top: 1px;
+}
+
 .myButton2:hover {
     background-color: #6a428a;
 }
